@@ -1,5 +1,10 @@
 # OS-Jackfruit: Lightweight Multi-Container Runtime
 
+1. 👥 Team Information
+Name and SRN
+1] Hansika R - PES2UG24CS178
+2] Meenakshi P -PES2UG25CS811
+
 ## Project Overview
 
 OS-Jackfruit is a lightweight container runtime implemented in C, designed to demonstrate core operating system concepts through practical container management. The project addresses the challenge of running isolated processes with resource constraints in a Linux environment, providing a simplified alternative to full-featured runtimes like Docker. Key OS concepts utilized include process isolation via namespaces, inter-process communication (IPC) mechanisms, kernel modules for system monitoring, memory management policies, and CPU scheduling experiments using the `nice` system call.
@@ -118,26 +123,23 @@ Shows the supervisor processing CLI commands during container execution.
 
 ### 5. Soft-limit warning
 Kernel monitor `dmesg` output reporting a soft memory threshold breach.  
-![Soft limit warning](screenshots/7.png)  
+<img width="1600" height="533" alt="WhatsApp Image 2026-04-15 at 21 45 56" src="https://github.com/user-attachments/assets/a7c29bcf-e064-4492-b6fa-5ec2ab69d451" />
 Displays kernel module warnings when containers approach soft memory limits.
 
 ### 6. Hard-limit enforcement
 Kernel monitor `dmesg` output showing containers killed after exceeding hard limits.  
 <img width="975" height="38" alt="image" src="https://github.com/user-attachments/assets/370299ee-2a14-407a-9e43-6b66654c00a3" />  
+<img width="1536" height="689" alt="image" src="https://github.com/user-attachments/assets/ae594231-b2dd-4bff-958f-91b7981d6d1a" />
 Demonstrates automatic termination of containers violating hard memory limits.
 
 ### 7. Scheduling experiment
-CPU-bound workload output and timing measurement from the scheduler experiment.  
-![CPU-bound scheduling experiment](screenshots/9.png)  
-Shows execution timing for CPU-intensive workloads.  
-![CPU-bound scheduling experiment](screenshots/10.png)  
-Compares performance metrics across different scheduling priorities.
+The scheduling experiment demonstrates that the high-priority process (lower nice value) receives more CPU time compared to the low-priority process, as reflected by higher CPU usage in the output.
+<img width="1600" height="533" alt="image" src="https://github.com/user-attachments/assets/e9dc5b6e-9f07-49ca-a8c8-f994d8e1f866" />
 
 ### 8. Clean teardown
 Process listings and defunct-check output showing no zombie processes after shutdown.  
-![No defunct processes](screenshots/11.png)  
-Confirms clean process termination without zombie processes.  
-![Supervisor and containers process list](screenshots/12.png)  
+<img width="1094" height="114" alt="image" src="https://github.com/user-attachments/assets/4806d7e5-0b2f-4922-9055-b3ad041f06a9" />
+Confirms clean process termination without zombie processes.    
 Displays final process state after container shutdown.
 
 ## Engineering Analysis
