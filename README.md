@@ -2,7 +2,8 @@
 
 1. 👥 Team Information
 Name and SRN
-1] Hansika R - PES2UG24CS178
+
+1] Hansika R - PES2UG24CS178                                                                                                                                                                  
 2] Meenakshi P -PES2UG25CS811
 
 ## Project Overview
