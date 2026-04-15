@@ -93,26 +93,27 @@ sudo ./engine stop c1
 
 ### 1. Multi-container supervision
 Supervisor startup with multiple containers launched under one process.  
-![Supervisor startup](screenshots/1.png)  
+<img width="975" height="105" alt="image" src="https://github.com/user-attachments/assets/51f186fe-e2f9-4568-9e0c-63c09d83e03c" />  
 This screenshot shows the initial supervisor process starting up.  
-![Running multiple containers](screenshots/2.png)  
+
+<img width="975" height="196" alt="image" src="https://github.com/user-attachments/assets/191f390d-cdbf-4e64-b5f5-ef1de7ebb82f" />
 Demonstrates concurrent execution of multiple containers managed by the supervisor.
 
 ### 2. Metadata tracking
 `engine ps` output showing tracked container IDs, states, and memory policy status.  
-![Supervisor state output](screenshots/3.png)  
+<img width="975" height="101" alt="image" src="https://github.com/user-attachments/assets/dd1d578a-e346-4b3b-ad8c-bda7100d0804" />
 Displays container metadata including IDs, current states, and applied memory limits.
 
 ### 3. Bounded-buffer logging
 Captured log file output from the supervisor log pipeline.  
-![Container logs](screenshots/4.png)  
+<img width="975" height="133" alt="image" src="https://github.com/user-attachments/assets/5f265008-ee8a-439e-ab9a-affe3fab7b7d" />
 Shows logs captured through the bounded buffer system for container output.
 
 ### 4. CLI and IPC
 A supervisor accepting a CLI request while running containers.  
-![CLI command and response](screenshots/5.png)  
+<img width="975" height="54" alt="image" src="https://github.com/user-attachments/assets/1f81bce6-f436-4474-9634-6ce9f0ae4447" />
 Illustrates CLI command input and supervisor response via IPC.  
-![Supervisor accepting CLI command](screenshots/6.png)  
+<img width="1068" height="244" alt="image" src="https://github.com/user-attachments/assets/3fa81a0c-7697-43cd-988b-8d562a6df118" />
 Shows the supervisor processing CLI commands during container execution.
 
 ### 5. Soft-limit warning
@@ -122,7 +123,7 @@ Displays kernel module warnings when containers approach soft memory limits.
 
 ### 6. Hard-limit enforcement
 Kernel monitor `dmesg` output showing containers killed after exceeding hard limits.  
-![Hard limit kill events](screenshots/8.png)  
+<img width="975" height="38" alt="image" src="https://github.com/user-attachments/assets/370299ee-2a14-407a-9e43-6b66654c00a3" />  
 Demonstrates automatic termination of containers violating hard memory limits.
 
 ### 7. Scheduling experiment
